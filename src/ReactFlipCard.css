@@ -1,0 +1,28 @@
+
+.ReactFlipCard_flipCardContainer {
+    user-select: none;
+}
+
+.ReactFlipCard_flipCard {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.ReactFlipCard_rotateX180Deg {
+    transform: rotateX(180deg);
+}
+
+.ReactFlipCard_rotateY180Deg {
+    transform: rotateY(180deg);
+}
+
+.ReactFlipCard_flipCardFront, .ReactFlipCard_flipCardBack {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.ReactFlipCard_flipCardFront {
+    position: absolute;
+}
