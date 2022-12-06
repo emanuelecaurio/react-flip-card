@@ -42,7 +42,7 @@ More examples on `demo/src/App.js`
 |**width**|<code>React.CSSProperties["width"]</code>|`'100px'`|The width of the div container|
 |**height**|<code>React.CSSProperties["height"]</code>|`'100px'`|The height of the div container|
 |**cursor**|<code>React.CSSProperties["cursor"]</code>|`'default'`|The cursor type that appear when mouse hover the div container|
-|**transitionDuration**|<code>React.CSSProperties["transitionDuration"]</code>|`'0.5s'`|The transition duration of the div container|
+|**transitionDuration**|<code>CSSProperties["transitionDuration"]</code>|`'0.5s'`|The transition duration of the div container|
 |**flipCardContainerStyle**|<code>React.CSSProperties</code>|`{}`|The ```style``` of the div container|
 |**flipCardContainerCss**|<code>string</code>|`''`|The additional ```className``` of the div container|
 |**flipCardStyle**|<code>React.CSSProperties</code>|`{}`|The ```style``` of the card itself|
@@ -69,6 +69,3 @@ If this package was helpful to you, please consider putting a star on the GitHub
 Also, you can follow me on my [Instagram personal blog](https://www.instagram.com/minudaje/) where I share software related content and music
 ## License
 MIT
-
-## Personal Blog
-
