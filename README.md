@@ -1,4 +1,4 @@
-# ReactFlipCard
+# ReactJsFlipCard
 Highly customizable flip card
 
 ## Demo
@@ -7,7 +7,7 @@ Highly customizable flip card
 ## Project Structure
 The project includes a demo folder initialized with Create React App.
 
-When you run the command ```build``` from react-flip-card ```package.json```, a ```dist``` and a ```lib``` folder will be generated.
+When you run the command ```build``` from reactjs-flip-card ```package.json```, a ```dist``` and a ```lib``` folder will be generated.
 
 The ```lib``` folder will be placed automatically into the demo project.
 
@@ -17,7 +17,7 @@ You can move into ```demo``` directory and ```start``` project from its own pack
 
 You can pass style or CSS classes through props. Note that the style is the one that will have the highest priority.
 ```js
-import ReactFlipCard from 'react-flip-card'
+import ReactFlipCard from 'reactjs-flip-card'
 
 function App() {
     
