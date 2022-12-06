@@ -1,10 +1,10 @@
 # ReactJsFlipCard
 Highly customizable flip card
 
-## Demo
+## 💻 Demo
 [Live Demo](https://react-flip-card-demo.surge.sh/)
 
-## Project Structure
+## 📁 Project Structure
 The project includes a demo folder initialized with Create React App.
 
 When you run the command ```build``` from reactjs-flip-card ```package.json```, a ```dist``` and a ```lib``` folder will be generated.
@@ -13,7 +13,7 @@ The ```lib``` folder will be placed automatically into the demo project.
 
 You can move into ```demo``` directory and ```start``` project from its own package.json script, just like any other Create React App.
 
-## Usage
+## 🔨 Usage
 
 You can pass style or CSS classes through props. Note that the style is the one that will have the highest priority.
 ```js
@@ -35,7 +35,7 @@ function App() {
 }
 ```
 More examples on `demo/src/App.js`
-## Props
+## 🧰 Props
 
 |Name|Type|Default|Description|
 |:--|:--:|:-----:|:----------|
@@ -61,10 +61,10 @@ More examples on `demo/src/App.js`
 |**onMouseLeave**|<code>MouseEventHandler</code>|`_=>un...ed`|Any callback assigned to the onMouseLeave event. This event relates to the card container|
 
 
-## Contributing and Support
+## ⭐ Contributing and Support ⭐
 Contributions of any kind are welcome.
 
-If this package was helpful to you, please consider putting a star on the GitHub project.
+If this package was helpful to you, please consider putting a star ⭐ on the GitHub project.
 
 Also, you can follow me on my [Instagram personal blog](https://www.instagram.com/minudaje/) where I share software related content and music
 ## License
