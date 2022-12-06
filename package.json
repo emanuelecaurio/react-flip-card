@@ -1,6 +1,6 @@
 {
   "name": "reactjs-flip-card",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Highly customizable react flip card",
   "main": "dist/index.js",
   "files": [

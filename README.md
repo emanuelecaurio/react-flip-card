@@ -51,9 +51,9 @@ More examples on `demo/src/App.js`
 |**frontCss**|<code>string</code>|`''`|The additional ```className``` of the front card|
 |**backStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the back card|
 |**backCss**|<code>string</code>|`''`|The additional ```className``` of the back card|
-|**direction**|<code>'vertical'&#124;'horizontal'</code>|`horizontal`|The direction of the flip card|
-|**flipTrigger**|<code>'onClick'&#124;'onHover'</code><br/><code>&#124;'disabled'&#124;undefined</code>|`'onHover'`|The event that trigger the flip|
-|**flipByProp**|<code>boolean&#124;undefined</code>|`undefined`|Eventually handle flip from boolean prop. Eventually you can set `flipTrigger` to `'disabled'` if this prop is enabled|
+|**direction**|<code>'vertical'&#124;</code><br/><code>'horizontal'</code>|`horizontal`|The direction of the flip card|
+|**flipTrigger**|<code>'onClick'&#124;</code><br/><code>'onHover'&#124;</code><br/><code>'disabled'&#124;</code><br/><code>undefined</code>|`'onHover'`|The event that trigger the flip|
+|**flipByProp**|<code>boolean&#124;</code><br/><code>undefined</code>|`undefined`|Eventually handle flip from boolean prop. Eventually you can set `flipTrigger` to `'disabled'` if this prop is enabled|
 |**frontComponent**|<code>ReactNode</code>|`required`|Any JSX Component|
 |**backComponent**|<code>ReactNode</code>|`required`|Any JSX Component|
 |**onClick**|<code>MouseEventHandler</code>|`_=>un...ed`|Any callback assigned to the onClick event. This event relates to the card container|
