@@ -39,26 +39,26 @@ More examples on `demo/src/App.js`
 
 |Name|Type|Default|Description|
 |:--|:--:|:-----:|:----------|
-|**width**|<code>React.CSSProperties["width"]</code>|`'100px'`|The width of the div container|
-|**height**|<code>React.CSSProperties["height"]</code>|`'100px'`|The height of the div container|
-|**cursor**|<code>React.CSSProperties["cursor"]</code>|`'default'`|The cursor type that appear when mouse hover the div container|
-|**transitionDuration**|<code>CSSProperties["transitionDuration"]</code>|`'0.5s'`|The transition duration of the div container|
-|**flipCardContainerStyle**|<code>React.CSSProperties</code>|`{}`|The ```style``` of the div container|
+|**width**|<code>CSSProperties["width"]</code>|`'100px'`|The width of the div container|
+|**height**|<code>CSSProperties["height"]</code>|`'100px'`|The height of the div container|
+|**cursor**|<code>CSSProperties["cursor"]</code>|`'default'`|The cursor type that appear when mouse hover the div container|
+|**transitionDuration**|<code>CSSProperties["tr...rn"]</code>|`'0.5s'`|The transition duration of the div container|
+|**flipCardContainerStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the div container|
 |**flipCardContainerCss**|<code>string</code>|`''`|The additional ```className``` of the div container|
-|**flipCardStyle**|<code>React.CSSProperties</code>|`{}`|The ```style``` of the card itself|
+|**flipCardStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the card itself|
 |**flipCardCss**|<code>string</code>|`''`|The additional ```className``` of the card itself|
-|**frontStyle**|<code>React.CSSProperties</code>|`{}`|The ```style``` of the front card|
+|**frontStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the front card|
 |**frontCss**|<code>string</code>|`''`|The additional ```className``` of the front card|
-|**backStyle**|<code>React.CSSProperties</code>|`{}`|The ```style``` of the back card|
+|**backStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the back card|
 |**backCss**|<code>string</code>|`''`|The additional ```className``` of the back card|
 |**direction**|<code>'vertical' | 'horizontal'</code>|`'horizontal'`|The direction of the flip card|
 |**flipTrigger**|<code>'onClick' | 'onHover' | 'disabled' | undefined</code>|`'onHover'`|The event that trigger the flip|
 |**flipByProp**|<code>boolean | undefined</code>|`undefined`|Eventually handle flip from boolean prop. Eventually you can set `flipTrigger` to `'disabled'` if this prop is enabled|
-|**frontComponent**|<code>React.ReactNode</code>|`<div>Front</div>`|Any JSX Component|
-|**backComponent**|<code>React.ReactNode</code>|`<div>Back</div>`|Any JSX Component|
-|**onClick**|<code>React.MouseEventHandler<HTMLDivElement></code>|`() => undefined`|Any callback assigned to the onClick event. This event relates to the card container|
-|**onMouseEnter**|<code>React.MouseEventHandler<HTMLDivElement></code>|`() => undefined`|Any callback assigned to the onMouseEnter event. This event relates to the card container|
-|**onMouseLeave**|<code>React.MouseEventHandler<HTMLDivElement></code>|`() => undefined`|Any callback assigned to the onMouseLeave event. This event relates to the card container|
+|**frontComponent**|<code>ReactNode</code>|`Front`|Any JSX Component|
+|**backComponent**|<code>ReactNode</code>|`Back`|Any JSX Component|
+|**onClick**|<code>MouseEventHandler</code>|`()=>undefined`|Any callback assigned to the onClick event. This event relates to the card container|
+|**onMouseEnter**|<code>MouseEventHandler</code>|`()=>undefined`|Any callback assigned to the onMouseEnter event. This event relates to the card container|
+|**onMouseLeave**|<code>MouseEventHandler</code>|`()=>undefined`|Any callback assigned to the onMouseLeave event. This event relates to the card container|
 
 
 ## Contributing and Support
