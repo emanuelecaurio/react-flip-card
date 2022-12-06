@@ -26,7 +26,8 @@ function App() {
         fontSize1rem: {fontSize: "1rem"},
         size200: {height: 200, width: 200},
         fontWeightBold: {fontWeight: "bold"},
-        backgroundOrange: {background: "orange"}
+        backgroundOrange: {background: "orange"},
+        centeredContent: {display: 'flex', justifyContent: 'center', alignItems: 'center'}
     }
     const [optionalToggle, setOptionalToggle] = useState(false)
     return (
@@ -201,6 +202,19 @@ function App() {
                         flipCardStyle={styles.card}
                         frontComponent={<div>You can select my text now.</div>}
                         backComponent={<div>Back!</div>}
+                    />
+                </div>
+            </div>
+            <div style={styles.sectionExample}>
+                <div style={styles.subTitle}>Flip Card Centered Content on a fixed card size</div>
+                <div style={{...styles.flex, ...styles.textAlignCenter}}>
+                    <ReactFlipCard
+                        width={200}
+                        flipCardStyle={styles.card}
+                        frontStyle={styles.centeredContent}
+                        backStyle={styles.centeredContent}
+                        frontComponent={<div>I am a centered text!</div>}
+                        backComponent={<div>Me too!</div>}
                     />
                 </div>
             </div>
