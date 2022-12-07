@@ -72,6 +72,7 @@ More examples on `demo/src/App.js`
 |**onMouseEnter**|<code>MouseEventHandler</code>|`_=>un...ed`|Any callback assigned to the onMouseEnter event. This event relates to the card container|
 |**onMouseLeave**|<code>MouseEventHandler</code>|`_=>un...ed`|Any callback assigned to the onMouseLeave event. This event relates to the card container|
 
+<br/>
 
 ## ⭐ Contributing and Support ⭐
 Contributions of any kind are welcome.
