@@ -1,6 +1,18 @@
 # ReactJsFlipCard
 Highly customizable flip card
 
+## ✔️ Getting Started
+
+You can install the module via `npm` or `yarn`:
+
+```sh
+npm install reactjs-flip-card
+```
+
+```sh
+yarn add reactjs-flip-card
+```
+
 ## 💻 Demo
 [Live Demo](https://react-flip-card-demo.surge.sh/)
 
