@@ -18,7 +18,7 @@ function App() {
         textAlignCenter: {textAlign: "center"},
         fontStyleItalic: {fontStyle: "italic"},
         flex: {display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 10},
-        card: {background: 'blue', color: 'white', borderRadius: 20,},
+        card: {background: '#00b3ad', color: 'white', borderRadius: 20,},
         marginTop10: {padding: 10},
         marginBottom10: {marginBottom: 10},
         padding10: {padding: 10},

@@ -15,7 +15,7 @@ code {
 .flipCardExample {
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background: linear-gradient(blue, #00dcca);
+  background: linear-gradient(#00b3ad, rgba(0, 255, 40, 0.41));
   color: white;
   font-weight: bold;
   text-align: center;
