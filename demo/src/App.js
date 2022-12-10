@@ -44,26 +44,30 @@ function App() {
                     <ReactFlipCard
                         cursor={"pointer"}
                         flipTrigger={"onClick"}
-                        flipCardStyle={styles.card}
-                        frontComponent={<div style={styles.padding10}>Click me!</div>}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
+                        frontComponent={<div style={styles.padding10 }>Click me!</div>}
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
                     <ReactFlipCard
                         cursor={"pointer"}
                         flipTrigger={"onClick"}
                         direction={"vertical"}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<div style={styles.padding10}>Click me! Vertical</div>}
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
                     <ReactFlipCard
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<div style={styles.padding10}>Hover me!</div>}
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
                     <ReactFlipCard
                         direction={"vertical"}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<div style={styles.padding10}>Hover me! Vertical</div>}
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
@@ -78,7 +82,8 @@ function App() {
                         <ReactFlipCard
                             width={"100%"}
                             height={"100%"}
-                            flipCardStyle={styles.card}
+                            frontStyle={styles.card}
+                            backStyle={styles.card}
                             frontComponent={<div style={styles.padding10}>Hover me! I am a resized card</div>}
                             backComponent={<div style={styles.padding10}>Back!</div>}
                         />
@@ -87,7 +92,8 @@ function App() {
                         <ReactFlipCard
                             width={"100%"}
                             height={"100%"}
-                            flipCardStyle={styles.card}
+                            frontStyle={styles.card}
+                            backStyle={styles.card}
                             frontComponent={<div style={styles.padding10}>Hover me! I am a resized card</div>}
                             backComponent={<div style={styles.padding10}>Back!</div>}
                         />
@@ -96,7 +102,8 @@ function App() {
                         <ReactFlipCard
                             width={"100%"}
                             height={"100%"}
-                            flipCardStyle={styles.card}
+                            frontStyle={styles.card}
+                            backStyle={styles.card}
                             frontComponent={<div style={styles.padding10}>Hover me! I am a resized card</div>}
                             backComponent={<div style={styles.padding10}>Back!</div>}
                         />
@@ -117,7 +124,8 @@ function App() {
                     <ReactFlipCard
                         flipByProp={optionalToggle}
                         flipTrigger={"disabled"}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<div style={styles.padding10}>You can't click me!</div>}
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
@@ -125,14 +133,16 @@ function App() {
                         flipByProp={optionalToggle}
                         flipTrigger={"disabled"}
                         direction={"vertical"}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<div style={styles.padding10}>You can't click me!</div>}
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
                     <ReactFlipCard
                         flipByProp={optionalToggle}
                         flipTrigger={"disabled"}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<div style={styles.padding10}>You can't hover me!</div>}
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
@@ -140,7 +150,8 @@ function App() {
                         flipByProp={optionalToggle}
                         flipTrigger={"disabled"}
                         direction={"vertical"}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<div style={styles.padding10}>You can't hover me!</div>}
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
@@ -151,12 +162,14 @@ function App() {
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
                         direction={"vertical"}
-                        flipCardCss={'flipCardExample'}
+                        frontCss={'flipCardExample'}
+                        backCss={'flipCardExample'}
                         frontComponent={<div>CSS Card</div>}
                         backComponent={<div>Back!</div>}
                     />
                     <ReactFlipCard
-                        flipCardCss={'flipCardExample'}
+                        frontCss={'flipCardExample'}
+                        backCss={'flipCardExample'}
                         frontComponent={<div>CSS Card</div>}
                         backComponent={<div>Back!</div>}
                     />
@@ -169,7 +182,8 @@ function App() {
                         direction={"vertical"}
                         cursor={"pointer"}
                         flipTrigger={"onClick"}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         onClick={() => alert("you clicked me!")}
                         frontComponent={
                             <div>
@@ -180,7 +194,8 @@ function App() {
                     />
                     <ReactFlipCard
                         direction={"vertical"}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         onMouseEnter={() => alert("mouse entered!")}
                         frontComponent={
                             <div>
@@ -199,7 +214,8 @@ function App() {
                         cursor={"pointer"}
                         flipTrigger={"onClick"}
                         flipCardContainerStyle={{userSelect: 'initial'}}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<div>You can select my text now.</div>}
                         backComponent={<div>Back!</div>}
                     />
@@ -210,9 +226,8 @@ function App() {
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
                         width={200}
-                        flipCardStyle={styles.card}
-                        frontStyle={styles.centeredContent}
-                        backStyle={styles.centeredContent}
+                        frontStyle={{...styles.card, ...styles.centeredContent}}
+                        backStyle={{ ...styles.card,...styles.centeredContent}}
                         frontComponent={<div>I am a centered text!</div>}
                         backComponent={<div>Me too!</div>}
                     />
@@ -224,7 +239,8 @@ function App() {
                     <ReactFlipCard
                         width={"auto"}
                         height={"auto"}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<div/>}
                         backComponent={<div style={styles.padding20}>This is the content!</div>}
                     />
@@ -235,7 +251,8 @@ function App() {
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
                         transitionDuration={'2s'}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<div>I am slow.</div>}
                         backComponent={<div style={styles.padding20}>Very slow.</div>}
                     />
@@ -245,9 +262,8 @@ function App() {
                 <div style={styles.subTitle}>Flip Card Front/Back different styles</div>
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
-                        flipCardStyle={styles.card}
-                        frontStyle={{background: "orange"}}
-                        backStyle={{background: "blue"}}
+                        frontStyle={{...styles.card, background: "orange"}}
+                        backStyle={{...styles.card, background: "blue"}}
                         frontComponent={<div>I am orange</div>}
                         backComponent={<div >I am blue</div>}
                     />
@@ -260,14 +276,16 @@ function App() {
                         direction={"vertical"}
                         cursor={"pointer"}
                         flipTrigger={"onClick"}
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={
                             <div>
                                 You can click me
                                 <ReactFlipCard
                                     width={50}
                                     height={30}
-                                    flipCardStyle={{...styles.card, ...styles.backgroundOrange}}
+                                    frontStyle={{...styles.card, ...styles.backgroundOrange}}
+                                    backStyle={{...styles.card, ...styles.backgroundOrange}}
                                     frontComponent={<div>Cool!</div>}
                                     backComponent={<div>Ok!</div>}
                                 />
@@ -281,7 +299,8 @@ function App() {
                 <div style={styles.subTitle}>Pass literally anything you want</div>
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
-                        flipCardStyle={styles.card}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
                         frontComponent={<img width={100} src={image} height={100} alt={""}/>}
                         backComponent={<div >back</div>}
                     />

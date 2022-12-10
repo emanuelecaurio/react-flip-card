@@ -28,6 +28,8 @@ You can move into ```demo``` directory and ```start``` project from its own pack
 ## 🔨 Usage
 
 You can pass style or CSS classes through props. Note that the style is the one that will have the highest priority.
+
+Please do not pass `background` or `backgroundColor` property into `flipCardStyle` as it may cause unexpected behaviours on different browsers. Use the props `frontStyle` and `backStyle` and pass the same style
 ```js
 import ReactFlipCard from 'reactjs-flip-card'
 
@@ -39,7 +41,8 @@ function App() {
     
     return (
         <ReactFlipCard
-            flipCardStyle={styles.card}
+            frontStyle={styles.card}
+            backStyle={styles.card}
             frontComponent={<div>Hover me!</div>}
             backComponent={<div>Back!</div>}
         />
@@ -57,8 +60,8 @@ More examples on `demo/src/App.js`
 |**transitionDuration**|<code>CSSProperties</code>|`'0.5s'`|The transition duration of the div container|
 |**flipCardContainerStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the div container|
 |**flipCardContainerCss**|<code>string</code>|`''`|The additional ```className``` of the div container|
-|**flipCardStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the card itself|
-|**flipCardCss**|<code>string</code>|`''`|The additional ```className``` of the card itself|
+|**flipCardStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the card itself. Important: please do not pass `background` or `backgroundColor` property here as it may cause unexpected behaviours on different browsers. Use the props `frontStyle` and `backStyle` and pass the same style there|
+|**flipCardCss**|<code>string</code>|`''`|The additional ```className``` of the card itself. Important: please do not pass `background` or `background-color` property here as it may cause unexpected behaviours on different browsers. Use the props `frontCss` and `backCss` and pass the same css there |
 |**frontStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the front card|
 |**frontCss**|<code>string</code>|`''`|The additional ```className``` of the front card|
 |**backStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the back card|
