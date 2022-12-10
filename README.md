@@ -60,7 +60,7 @@ More examples on `demo/src/App.js`
 |**transitionDuration**|<code>CSSProperties</code>|`'0.5s'`|The transition duration of the div container|
 |**flipCardContainerStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the div container|
 |**flipCardContainerCss**|<code>string</code>|`''`|The additional ```className``` of the div container|
-|**flipCardStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the card itself. Important: please do not pass `background` or `backgroundColor` property here as it may cause unexpected behaviours on different browsers. Use the props `frontStyle` and `backStyle` and pass the same style there|
+|**flipCardStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the card itself. Important: please do not pass `background` or background color property here as it may cause unexpected behaviours on different browsers. Use the props `frontStyle` and `backStyle` and pass the same style there|
 |**flipCardCss**|<code>string</code>|`''`|The additional ```className``` of the card itself. Important: please do not pass `background` or `background-color` property here as it may cause unexpected behaviours on different browsers. Use the props `frontCss` and `backCss` and pass the same css there |
 |**frontStyle**|<code>CSSProperties</code>|`{}`|The ```style``` of the front card|
 |**frontCss**|<code>string</code>|`''`|The additional ```className``` of the front card|
