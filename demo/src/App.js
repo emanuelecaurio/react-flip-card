@@ -59,6 +59,15 @@ function App() {
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
                     <ReactFlipCard
+                        cursor={"pointer"}
+                        flipTrigger={"onClick"}
+                        direction={"diagonal"}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
+                        frontComponent={<div style={styles.padding10}>Click me! Diagonal</div>}
+                        backComponent={<div style={styles.padding10}>Back! </div>}
+                    />
+                    <ReactFlipCard
                         frontStyle={styles.card}
                         backStyle={styles.card}
                         frontComponent={<div style={styles.padding10}>Hover me!</div>}
@@ -69,6 +78,13 @@ function App() {
                         frontStyle={styles.card}
                         backStyle={styles.card}
                         frontComponent={<div style={styles.padding10}>Hover me! Vertical</div>}
+                        backComponent={<div style={styles.padding10}>Back! </div>}
+                    />
+                    <ReactFlipCard
+                        direction={"diagonal"}
+                        frontStyle={styles.card}
+                        backStyle={styles.card}
+                        frontComponent={<div style={styles.padding10}>Hover me! Diagonal</div>}
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
                 </div>

@@ -4,7 +4,8 @@ import "./ReactFlipCard.css"
 
 enum Direction {
     'vertical' = 'vertical',
-    'horizontal' = 'horizontal'
+    'horizontal' = 'horizontal',
+    'diagonal' = 'diagonal'
 }
 
 enum FlipTrigger {
@@ -26,8 +27,8 @@ interface FlipCardProps {
     frontCss?: string,
     backStyle?: React.CSSProperties,
     backCss?: string,
-    direction?: 'vertical' | 'horizontal',
-    flipTrigger?: 'onClick' | 'onHover' | 'disabled' | undefined,
+    direction?: 'vertical' | 'horizontal' |'diagonal',
+    flipTrigger?: 'onClick' | 'onHover' | 'disabled',
     flipByProp?: boolean | undefined,
     frontComponent: React.ReactNode,
     backComponent: React.ReactNode,
@@ -42,6 +43,8 @@ function getDirectionCssClass(direction: string) {
             return 'ReactFlipCard_rotateX180Deg';
         case Direction.horizontal:
             return 'ReactFlipCard_rotateY180Deg';
+        case Direction.diagonal:
+            return 'ReactFlipCard_rotateDiagonal';
         default:
             return 'ReactFlipCard_rotateY180Deg';
     }
