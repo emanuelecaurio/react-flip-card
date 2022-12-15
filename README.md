@@ -1,5 +1,9 @@
 # ReactJsFlipCard
-Highly customizable flip card
+<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/reactjs-flip-card?color=g"> 
+<br/> <br/>
+✔ Highly customizable flip card <br/>
+✔ Diagonal flip support <br/>
+✔ [Small bundle size](https://bundlephobia.com/package/reactjs-flip-card)
 
 ## ✔️ Getting Started
 
