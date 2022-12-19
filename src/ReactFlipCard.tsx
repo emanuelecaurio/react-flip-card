@@ -1,6 +1,6 @@
 import * as React from "react";
 import {useEffect, useState} from "react";
-import "./ReactFlipCard.css"
+import cssMod from "./ReactFlipCard.module.css"
 
 enum Direction {
     'vertical' = 'vertical',
@@ -15,12 +15,8 @@ enum FlipTrigger {
 }
 
 interface FlipCardProps {
-    width?: React.CSSProperties["width"],
-    height?: React.CSSProperties["height"],
-    cursor?: React.CSSProperties["cursor"],
-    transitionDuration?: React.CSSProperties["transitionDuration"],
-    flipCardContainerStyle?: React.CSSProperties,
-    flipCardContainerCss?: string,
+    containerStyle?: React.CSSProperties,
+    containerCss?: string,
     flipCardStyle?: React.CSSProperties,
     flipCardCss?: string,
     frontStyle?: React.CSSProperties,
@@ -40,24 +36,20 @@ interface FlipCardProps {
 function getDirectionCssClass(direction: string) {
     switch (direction) {
         case Direction.vertical:
-            return 'ReactFlipCard_rotateX180Deg';
+            return cssMod.rotateX180Deg;
         case Direction.horizontal:
-            return 'ReactFlipCard_rotateY180Deg';
+            return cssMod.rotateY180Deg;
         case Direction.diagonal:
-            return 'ReactFlipCard_rotateDiagonal';
+            return cssMod.rotateDiagonal;
         default:
-            return 'ReactFlipCard_rotateY180Deg';
+            return cssMod.rotateY180Deg;
     }
 }
 
 export default function ReactFlipCard(
     {
-        width = 100,
-        height = 100,
-        cursor = 'default',
-        transitionDuration = '.5s',
-        flipCardContainerStyle = {},
-        flipCardContainerCss = '',
+        containerStyle = {},
+        containerCss = '',
         flipCardStyle = {},
         flipCardCss = '',
         frontStyle = {},
@@ -83,8 +75,8 @@ export default function ReactFlipCard(
 
     return (
         <div
-            style={{width, height, cursor, ...flipCardContainerStyle}}
-            className={`ReactFlipCard_flipCardContainer ${flipCardContainerCss} `}
+            style={containerStyle}
+            className={`${cssMod.container} ${containerCss} `}
             onMouseEnter={(e) => {
                 if (flipTrigger === FlipTrigger.onHover) {
                     setIsFlipped(!isFlipped)
@@ -104,15 +96,15 @@ export default function ReactFlipCard(
                 onClick(e)
             }}>
             <div
-                className={`ReactFlipCard_flipCard ${flipCardCss} ${isFlipped ? getDirectionCssClass(direction) : ''}`}
-                style={{transitionDuration, ...flipCardStyle}}>
+                className={`${cssMod.flipCard} ${flipCardCss} ${isFlipped ? getDirectionCssClass(direction) : ''}`}
+                style={flipCardStyle}>
                 <div
-                    className={`ReactFlipCard_flipCardFront ${frontCss}`}
-                    style={{...frontStyle}}>
+                    className={`${cssMod.flipCardFront} ${frontCss}`}
+                    style={frontStyle}>
                     {frontComponent}
                 </div>
-                <div className={`ReactFlipCard_flipCardBack ${backCss} ${getDirectionCssClass(direction)}`
-                } style={{...backStyle}}>
+                <div className={`${cssMod.flipCardBack} ${backCss} ${getDirectionCssClass(direction)}`
+                } style={backStyle}>
                     {backComponent}
                 </div>
             </div>

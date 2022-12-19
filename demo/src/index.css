@@ -1,22 +1,48 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .flipCardExample {
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  background: linear-gradient(#00b3ad, rgba(0, 255, 40, 0.41));
-  color: white;
-  font-weight: bold;
-  text-align: center;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: linear-gradient(#00b3ad, rgba(0, 255, 40, 0.41));
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.resizeBasedOnParent {
+    width: 100%;
+    height: 100%;
+}
+
+.selectable {
+    user-select: initial
+}
+
+.width200px {
+    width: 200px;
+}
+
+.widthHeightAuto {
+  height: auto;
+  width: auto;
+}
+
+.transitionDuration2s {
+  transition-duration: 2s;
 }
