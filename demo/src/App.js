@@ -42,7 +42,7 @@ function App() {
                 </div>
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
-                        cursor={"pointer"}
+                        containerCss={'clickable'}
                         flipTrigger={"onClick"}
                         frontStyle={styles.card}
                         backStyle={styles.card}
@@ -50,7 +50,7 @@ function App() {
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
                     <ReactFlipCard
-                        cursor={"pointer"}
+                        containerCss={'clickable'}
                         flipTrigger={"onClick"}
                         direction={"vertical"}
                         frontStyle={styles.card}
@@ -59,7 +59,7 @@ function App() {
                         backComponent={<div style={styles.padding10}>Back! </div>}
                     />
                     <ReactFlipCard
-                        cursor={"pointer"}
+                        containerCss={'clickable'}
                         flipTrigger={"onClick"}
                         direction={"diagonal"}
                         frontStyle={styles.card}
@@ -96,8 +96,7 @@ function App() {
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <div style={styles.size200}>
                         <ReactFlipCard
-                            width={"100%"}
-                            height={"100%"}
+                            containerCss={'resizeBasedOnParent'}
                             frontStyle={styles.card}
                             backStyle={styles.card}
                             frontComponent={<div style={styles.padding10}>Hover me! I am a resized card</div>}
@@ -106,8 +105,7 @@ function App() {
                     </div>
                     <div style={{width: 100, height: 200}}>
                         <ReactFlipCard
-                            width={"100%"}
-                            height={"100%"}
+                            containerCss={'resizeBasedOnParent'}
                             frontStyle={styles.card}
                             backStyle={styles.card}
                             frontComponent={<div style={styles.padding10}>Hover me! I am a resized card</div>}
@@ -116,8 +114,7 @@ function App() {
                     </div>
                     <div style={{width: 200, height: 100}}>
                         <ReactFlipCard
-                            width={"100%"}
-                            height={"100%"}
+                            containerCss={'resizeBasedOnParent'}
                             frontStyle={styles.card}
                             backStyle={styles.card}
                             frontComponent={<div style={styles.padding10}>Hover me! I am a resized card</div>}
@@ -196,7 +193,7 @@ function App() {
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
                         direction={"vertical"}
-                        cursor={"pointer"}
+                        containerCss={'clickable'}
                         flipTrigger={"onClick"}
                         frontStyle={styles.card}
                         backStyle={styles.card}
@@ -227,9 +224,8 @@ function App() {
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
                         direction={"vertical"}
-                        cursor={"pointer"}
                         flipTrigger={"onClick"}
-                        flipCardContainerStyle={{userSelect: 'initial'}}
+                        containerCss={'clickable selectable'}
                         frontStyle={styles.card}
                         backStyle={styles.card}
                         frontComponent={<div>You can select my text now.</div>}
@@ -241,7 +237,7 @@ function App() {
                 <div style={styles.subTitle}>Flip Card Centered Content on a fixed card size</div>
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
-                        width={200}
+                        containerCss={'width200px'}
                         frontStyle={{...styles.card, ...styles.centeredContent}}
                         backStyle={{ ...styles.card,...styles.centeredContent}}
                         frontComponent={<div>I am a centered text!</div>}
@@ -253,8 +249,7 @@ function App() {
                 <div style={styles.subTitle}>Flip Card Resized based on back component size</div>
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
-                        width={"auto"}
-                        height={"auto"}
+                        containerCss={'widthHeightAuto'}
                         frontStyle={styles.card}
                         backStyle={styles.card}
                         frontComponent={<div/>}
@@ -266,7 +261,7 @@ function App() {
                 <div style={styles.subTitle}>Flip Card with higher transition duration</div>
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
-                        transitionDuration={'2s'}
+                        flipCardCss={'transitionDuration2s'}
                         frontStyle={styles.card}
                         backStyle={styles.card}
                         frontComponent={<div>I am slow.</div>}
@@ -290,7 +285,7 @@ function App() {
                 <div style={{...styles.flex, ...styles.textAlignCenter}}>
                     <ReactFlipCard
                         direction={"vertical"}
-                        cursor={"pointer"}
+                        containerCss={'clickable'}
                         flipTrigger={"onClick"}
                         frontStyle={styles.card}
                         backStyle={styles.card}
@@ -298,8 +293,7 @@ function App() {
                             <div>
                                 You can click me
                                 <ReactFlipCard
-                                    width={50}
-                                    height={30}
+                                    containerStyle={{width: 50, height: 30}}
                                     frontStyle={{...styles.card, ...styles.backgroundOrange}}
                                     backStyle={{...styles.card, ...styles.backgroundOrange}}
                                     frontComponent={<div>Cool!</div>}
