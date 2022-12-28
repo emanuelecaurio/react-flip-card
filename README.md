@@ -5,7 +5,7 @@
 * Diagonal flip support</li>
 * [Small bundle size](https://bundlephobia.com/package/reactjs-flip-card)</li>
 
-**works with**: `React >= 16.8` or higher
+**works with**: `React >= 16.8`
 
 important! Changed some props from version 2.x.x.
 Starting from version 2, there will be **no CSS conflicts** thanks to `:where` and `module.css`.
