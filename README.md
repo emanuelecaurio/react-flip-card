@@ -15,7 +15,7 @@ More about
 [the :where exception](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_where_exception) and
 [css modules](https://css-tricks.com/css-modules-part-1-need/)
 
-## ✔️ Getting Started
+## Getting Started
 
 You can install the module via `npm` or `yarn`:
 
@@ -27,10 +27,10 @@ npm install reactjs-flip-card
 yarn add reactjs-flip-card
 ```
 
-## 💻 Demo
+## Demo
 [Live Demo](https://react-flip-card-demo.surge.sh/)
 
-## 📁 Project Structure
+## Project Structure
 The project includes a demo folder initialized with Create React App.
 
 When you run the command ```build``` from reactjs-flip-card ```package.json```, a ```dist``` and a ```lib``` folder will be generated.
@@ -39,7 +39,7 @@ The ```lib``` folder will be placed automatically into the demo project.
 
 You can move into ```demo``` directory and ```start``` project from its own package.json script, just like any other Create React App.
 
-## 🔨 Usage
+## Usage
 
 You can pass style or CSS classes through props.
 ~~Note that the style is the one that will have the highest priority.~~ (Not true for version 2.x.x. You can pass your custom classNames and they will get higher priority).
@@ -69,7 +69,7 @@ function App() {
 
 More examples on `demo/src/App.js`
 
-## 🧰 Props V2.x.x
+## Props V2.x.x
 
 |Name|Type|Default|Description|
 |:--|:--:|:-----:|:----------|
@@ -90,7 +90,7 @@ More examples on `demo/src/App.js`
 |**onMouseEnter**|<code>MouseEventHandler</code>|`_=>un...ed`|Any callback assigned to the onMouseEnter event. This event relates to the card container|
 |**onMouseLeave**|<code>MouseEventHandler</code>|`_=>un...ed`|Any callback assigned to the onMouseLeave event. This event relates to the card container|
 
-## 🧰 Props V1.x.x
+## Props V1.x.x
 
 **width** | **height** | **cursor**: removed in version 2. Optionally Pass them into `containerStyle` or`containerCss` for version 2. Same default values
 
@@ -126,11 +126,10 @@ More examples on `demo/src/App.js`
 
 <br/>
 
-## ⭐ Contributing and Support ⭐
+## Contributing and Support
 Contributions of any kind are welcome.
 
-If this package was helpful to you, please consider putting a star ⭐ on the GitHub project.
+If this package was helpful to you, please consider putting a star on the GitHub project.
 
-Also, you can follow me on my [Instagram personal blog](https://www.instagram.com/minudaje/) where I share software related content and music
 ## License
 MIT

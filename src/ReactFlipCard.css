@@ -1,35 +1,35 @@
 
-:where(.container) {
+:where(.ReactFlipCard__container) {
     user-select: none;
     width: 100px;
     height: 100px;
 }
 
-:where(.flipCard) {
+:where(.ReactFlipCard__flipCard) {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition-duration: .5s;
 }
 
-:where(.rotateX180Deg) {
+:where(.ReactFlipCard__rotateX180Deg) {
     transform: rotateX(180deg);
 }
 
-:where(.rotateY180Deg) {
+:where(.ReactFlipCard__rotateY180Deg) {
     transform: rotateY(180deg);
 }
 
-:where(.rotateDiagonal) {
+:where(.ReactFlipCard__rotateDiagonal) {
     transform: rotate3d(.5, 1, 0, 180deg);
 }
 
-:where(.flipCardFront, .flipCardBack) {
+:where(.ReactFlipCard__flipCardFront, .ReactFlipCard__flipCardBack) {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
 
-:where(.flipCardFront) {
+:where(.ReactFlipCard__flipCardFront) {
     position: absolute;
 }
