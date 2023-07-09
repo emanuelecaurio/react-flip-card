@@ -1,6 +1,6 @@
 import * as React from "react";
 import {useEffect, useState} from "react";
-import cssMod from "./ReactFlipCard.module.css"
+import "./ReactFlipCard.css"
 
 enum Direction {
     'vertical' = 'vertical',
@@ -36,13 +36,13 @@ interface FlipCardProps {
 function getDirectionCssClass(direction: string) {
     switch (direction) {
         case Direction.vertical:
-            return cssMod.rotateX180Deg;
+            return 'ReactFlipCard__rotateX180Deg';
         case Direction.horizontal:
-            return cssMod.rotateY180Deg;
+            return 'ReactFlipCard__rotateY180Deg';
         case Direction.diagonal:
-            return cssMod.rotateDiagonal;
+            return 'ReactFlipCard__rotateDiagonal';
         default:
-            return cssMod.rotateY180Deg;
+            return 'ReactFlipCard__rotateY180Deg';
     }
 }
 
@@ -76,7 +76,7 @@ export default function ReactFlipCard(
     return (
         <div
             style={containerStyle}
-            className={`${cssMod.container} ${containerCss} `}
+            className={`ReactFlipCard__container ${containerCss} `}
             onMouseEnter={(e) => {
                 if (flipTrigger === FlipTrigger.onHover) {
                     setIsFlipped(!isFlipped)
@@ -96,14 +96,14 @@ export default function ReactFlipCard(
                 onClick(e)
             }}>
             <div
-                className={`${cssMod.flipCard} ${flipCardCss} ${isFlipped ? getDirectionCssClass(direction) : ''}`}
+                className={`ReactFlipCard__flipCard ${flipCardCss} ${isFlipped ? getDirectionCssClass(direction) : ''}`}
                 style={flipCardStyle}>
                 <div
-                    className={`${cssMod.flipCardFront} ${frontCss}`}
+                    className={`ReactFlipCard__flipCardFront ${frontCss}`}
                     style={frontStyle}>
                     {frontComponent}
                 </div>
-                <div className={`${cssMod.flipCardBack} ${backCss} ${getDirectionCssClass(direction)}`
+                <div className={`ReactFlipCard__flipCardBack ${backCss} ${getDirectionCssClass(direction)}`
                 } style={backStyle}>
                     {backComponent}
                 </div>

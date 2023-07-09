@@ -131,6 +131,5 @@ Contributions of any kind are welcome.
 
 If this package was helpful to you, please consider putting a star on the GitHub project.
 
-Also, you can follow me on my [Instagram personal blog](https://www.instagram.com/minudaje/) where I share software related content and music
 ## License
 MIT
